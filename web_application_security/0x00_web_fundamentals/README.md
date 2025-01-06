@@ -1,0 +1,1 @@
+In this oroject we are goin go learn how explode 4 types of vulnerabilities that can occur in a web app.
