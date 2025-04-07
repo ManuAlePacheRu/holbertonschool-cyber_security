@@ -1,2 +1,2 @@
 #!/bin/bash
-grep "pam_unix" /var/log/auth.log | cut -d' ' -f6- | cut -d')' -f1 | sort | uniq -c | sort -nr
+grep "pam_unix" auth.log | awk -F '[(:]' '{print $3}' | sort | uniq -c | sort -nr
