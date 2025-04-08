@@ -1,2 +1,3 @@
 #!/bin/bash
-grep "Accepted password" auth.log | sed -E 's/.*from ([^ ]+).*/\1/' | sort -u | wc -l
+grep "Accepted password" /var/log/auth.log | grep -oP '(?<=from\s)[\d\.]+' | sort -u | wc -l
+
